@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 25px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #FFD700;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.comentarios-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+#comentarios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #fff;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+label {
+    margin-top: 20px;
+}
+
+input {
+    height: 30px;
+    color: #F4EDE3;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-top: 10px;
+    border-color: #F9C420;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 200px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-top: 20px;
+    border-color: #F9C420;
+    border-radius: 5px;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    background-color: #F9C420;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    margin-left: 220px;
+    transition: .5s;
+}
+
+.pai {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 50px;
+        
+}
+
+.foto-1 {
+    background-image: url('https://play-lh.googleusercontent.com/FC_ggvbL8insMTt6KaoYBDDgYDgoo61DIP-5iUVhCWqwl2V5vj_T7MA7Q1HoCBPzeWw');
+}
+
+.foto-2 {
+    background-image: url('https://img.quizur.com/f/img61a90dab78dbb8.81298788.jpg?lastEdited=1638469044');
+}
+
+.foto-3 {
+    background-image: url('https://pbs.twimg.com/profile_images/1345980086797946883/6lFdDFD9_400x400.jpg');
+}
+
+.foto-4 {
+    background-image: url('https://yt3.googleusercontent.com/Ku5ypwNp3aTHy3F9QVhWZcVoV9UEG4LrwOLMzbZKLNXgyk8qPgfjMbtGjyAAlS6-3W5jQbKB9Q=s900-c-k-c0x00ffffff-no-rj');
+}
+
+.foto-5 {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAAEDCAMAAABQ/CumAAABv1BMVEX///+z+hv/gADiKxqE1gCFKf64IP//dgD/fgDCBBn/ewC/BHT/eQD/fAD/kz3/ton/8ef/mErgAAD/YgD/nFOw+gCu/xx91AD/n1mzAP//cwDkLAC+AAC9AHiyIf//697/3MWM3AjhHQD/vpT/1br/o2j/+PL/z7B7AP66AGaE3gCi7RTl9tThIw787+72kQb/UgD/wpv/jTD/4tD/x6P/hx7y+ujr+N3V8Lnj/brR/Ivt/tPZ/KCFfLWFG//B+1e9+0e654rZ8cDysa3o/cblSD3GJMTwop715P+a5xDtjYfrgXvmVUv2ycfQ8a7SuP/axf/l1//59f+s4m+g3leT2zV+nH2OPP6fY/6wgv7Bnv7i/7G88muFacjg0P+gALLMTYripcOEt12cHtDsxtmRJOfFL4KEvFLaibG2D4+tFaf03uqEmJGFQuvE6pva5s7SJnjdJiTbJjPWIUDjg5PViv+e3lLPff/DI9XEV/+9Ierdpf/G+2e+IebLJbDIZv/RJpPgrv/oZ1/XAFH41dPXU6LFLDnhn6POUVnE4xfR0RTevRDqqAzWyhLsZha68BnaSiDuoQr/eDn/qIf/kmeDSib3AAALvUlEQVR4nO2b/X/TxhnAbQcq4Ui2Ywx2VIqdxC/Ngil+g0BYINCWhHcIWbvCKGzrNvbCKGXtytq1MFbWN9qt+4Onu9PLnU4vJ+Vkp/s8318gsnx+vnruXVImAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8COiffTYoUNnziwjLl+5cvXq7Wvr69cnHVU0x1aW769t3tjaVWX52as2q2+9/fN3rlzbeS5HV26euLU1ZwW8i+Mnv1jdbbO6umqq7H77nduTjtri6Osnb53et7Qx5xc5xW4vpsi7d+4enmz0x46fOLXPJLsRGjzhl69yErt/tTi9eOfXkwp/5SSJPptdmgu//HZV+ukqp/De4vT09OJv/jD+8A854SMBkfixw1t8GpCCKXF3vPEfv2VHjxDLAOG3fFWaJiz+bozxf0LHn10Sj9+/Kt2zHcaUhxXm+iODGCnADlwWfj9tO4yjPdzMsvHHN/Dpld5dtB2mUxc46Y0/iQEzwNm9qk3KzcFHIJuNLYDwKLznKqRalVayPgJCwxmfhj96HFyF6TvpGZzwE8hm41cj7PCnQIX00nDK3yBREnZxLfqV6fTTcNrfIEFLIJNYT4u+N/2KQ0ppuBVgIDyo2dPvrRubm2v3Ly8v/3n2IMWD9x9iPkA8SsPg9QADgXqEI9/aXLt85tBRpsy/zL7k8vnLUw7dchoKAQLm3Cgq+g/Xlj2h21ynFe5RClPzZ+UbBCYhWAFd+rUz/sFb0Gn4O63QfUO+wieBCoECm2ciS6XT8CatMFWWv4YLNPBXqG4tCxX7kevwV0Zh/pxsg+OxFKq7ohNAWHcVPmUU5NekgHHZvy1U18QL/thReMwoyK9JpwMNeIWqaAoQV900sArS+6TgJHDjQvVYrJJfClDoXpBrcCxEYWlbBlS/yipMdeUqBI8KXoXq5ZhFrwcpSG4MN0MU2C7pRuyyHwcoSG4MIR0S256roYOxL3+bDVA4L1UhaJbqbc/VzfhlrwcodC9KVQieXrCNIW5bxjz2V5iSO1s9FWJAN4atJIXbfRKnILU9hys4NSnOsOxyLUjhkkyFkMGZrkmxxmWXAAW5M71wBacmJeiPEJ/5zZFkj88RCnZNqiYrnXSrn3IKUruk8Lbg7iQlK/32LL9ewDVpnApz2+iQ7LXbm5yC1F41dFzIOg36w4TF82tn+b1q6OiM2J7CZ95NGEvhmUSF0DkSYmM7FYkMbg+6XFuQOTCcjFLIbqc5Z56YCgcf8goy56qhk23M3DY6VbL65OqR3LEtZAPDBvWr1Xay4tEUgxsWJE+3V6IVUBqqh5IVj+bbfIc0NS9zeD4arbCUZNVpgQaGB7xC96lEhbAdDCoNSVY8lsLB9zkDyQrRBjgNyYdnn6YgWSFqhmGnIVl7NtuCT1OQPM+LHNtIGhIuGNZnD37AjQqyFaIHBpyGhI3h6iy3WJBfkQR6VfIQQKLSn8zyEyTpCgK9KklDopHho1k/A8kKIl2SSTXZBsBjv8YseWiLXjEQNhJNk67P+rTlKen7edFzVUyiPunJPd8kyL5ZFba3TbFUTbDs+djfQPbGcFtMITsXfyPm2j/865HcVVsmch/GIX6D/ue8v4H0220i4zNiI26DvlsOMJB9n0dk1UPYdT9WuYeDDeQOC6KDG65KsQy6AQ0hjecwRBtDdiNGGkIMpsoJl7HBiDYGsyoJl3mpHGwgeWxGCM30MEuiaTgX2A6QgvQkCC0+7aok9OuXHgb1prgaSR4UMJG7kg77BJYNZ784EFyJTIMUnqkSnmNgh4jbhs8eHTgQEr/sm1Qu4grZ0yHFXDLjP7AnTKA7n0YtQohNuEkaAnaUnj3/F4p/T6hB+WJqr/XEqEnZffxsj4SP4t/js2nkpqAs/YEwijgKp5jozz76wg5/cilAiI9upsNN/JXDz54z0UcYzKfxdCdN2GNJNPsR3w2eP8I1h44+vBJ1y3KXmn5EzZNw7Nkvv/r6m9c0xeCiD09Bt3xhDG/nBcy495PQv/vyWzN2XVG0vK7mcrkXvEBwCrrlp+N5vZAPHEX+1bdf//u1nBm6FbvN98IpmB9LBjAn9zOBf2NGrlmh07HbCKZgvnx+jC94krhHeStw/8gdVIEUdMtTaQ4EPEUjMm6aF1EpmC8/TWk6FEhbEY2ebQ4BCeiOswbZLGjxHAIFuhNIgIUuXIswum8dMuO/eHZi72h3YlalF37xv3Fuou+Yz+hxkrB378s7LP4MatHiVcnYa9Kl47848fgRTSOOgIkd/vyFydV/D0Wh5qDtdTC7f/Pyp7WaTISAQ94VOHLk+/OXUtgV2h5FI7w9qIYd/ZH//NDcceFjGroWImGQ6Pf+tzeYdKBhLOhKnrdQVV3H196MfmdefIZBsYAnrFrexPzH/EPRR7Ufho3SpEOLQ2nQHPYWTHrDZmNQ+hFceAAAAAAAAAAAAAAA/h9pNxuYScexDeoG2iLSjEnHsQ1KZAtYm3Qc2wAUdgKgsBMAhZ0AKOwELAW9TuA+Hyy0Cv3+TMt7W61EIKfU+v0C+rztHqz30Pc67hfMAzOooA65R0SdKkkhp2AM1qHe0hRNV010Tckt0B/1DXR6IZNpjhT00JjSyKA7pbgQ84sFA31Pc77SyzkFGQV0ao+cKsOhxNxjVmiFdsugn8dQNW3oflhA9xL1SqZlPe+gYYU8viedGVo3ffM9cnInT99AVZWZdmaInxpS0lVoaN4HSlSlwiqotZb9/BKlkBvaj0BYCi3vYx26VuqMQaHnd/s832cUcqpjSSvkndOxQp9/TEvVi3rqCj37Surobq1m34PWC4wCiQfd0jUoBRIkus2L2kJBpw9pOu0uVUHHOM25YRloWmvYqA8aC327zhc9CqrSX+g0Oy1GQdVyRfNg0Ww8dlVTlZF5qDls0Q8WyFRQW5iaVWSb/IyquL3QYETisyxtBX1E9ba2gqo5valzLQrOec2cnoZCnj1awz+i5phfqOAA9RlaQe3TZ1gKat79Xo6cpzA9ckVLQYEdnev40qmq525/X3XTYCkozCmWguImhvSdOWXIlmQ/PZeeQkv3REKfmy+6Cnnm4loK6ox7ZEROa3l/1nqcNz0FnAS9xp2M1dSRq6CwozlRcBtCZqCQpsGV1NTSVSDlc0lAox2uSW1HwdOEiALlRZ7c9eQKQ9pIago4ElX1OVtx3MjoXGA/thTcA5XAAcw6NS0F0thGtQqH6lQUe47kExdVFr7Was7ndxvSJxiMgtUR6jzk3GG4AlW7cOHes6jflamg0MciHj0XVyAP4utcf+R8JEXBetyf6d+jFCIqkpBCRp5CxlKge0fr6Xk1ALy62UFZsAYfrUkdIqPwaCaAQklUgeTT229h6hIVyHRIL1KHyAjm14+4iCmQ66NkeCQueazRhxkFehpXtzjEFMhMBS+HPLTkLXmsOQDzM/WQVmgjpkCutc9Uxe5F5Dzyai2jRtShnN8EiEVMoU1WC/xcxZ7TylGwStOo1kCmyOxagHzg/E9MwZphcO1qYG/9yFGoW+sqhXIgmdG9XUnBcCZsggpWrJ6SSvbaU5KC1bLQ2rBhH7JeSmJWlZmGuWB0Vl+CClYazG9SJTWd1bMsBed9PFXR+tb4ULOWkMqM9XpCqUM2AIxePAW7cNWoNMiBZsHdNJGlQL8IptjLlZGVGrQTWSj0dcW+ckYzloL7apBZ0qhQGCn0xp40BWejhFpxtd1tBjSpcH5UszpIYYXMgnuB3JJkrp0tB/tnqEVjwWe2pxp2mxdX8NsX1CoS91Sdn9G9Cpmi4d1U1dypVAyFTCOfZ4pRlZbMbWGb+oyCelJaIVOqGVTFNesy1e0W8uYKSJthCylqaF3kc7ulSBWka6p5IYYK3j2U+0LKoJhTNKPDHCv1CvhdGE1TtBrzUatmUikyZ2eGFXzUp/B2r08KUpQKzmQTnzoj/Z2aUqPDTyrqjU6nKeH9nfagaRYUOncEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIk/8BgHSherNT5YcAAAAASUVORK5CYII=');
+}
+
+.foto-6 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPJCJO7iXxBi5LmH_B-Nr4MMnIih7uhDYgJw&usqp=CAU');
+}
+
+.box-foto {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.nome {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+.texto {
+    width: 80%;
+    color: #fff;
+    border: 2px solid yellow;
+    padding: 20px;
+    margin-left: 50px;
+    font-size: 19px;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    button {
+        display: flex;
+        margin: auto;
+        margin-top: 20px;
+       }
+
+       .texto {
+        width: 70%;
+        color: #fff;
+        border: 2px solid yellow;
+        padding: 20px;
+        margin-left: 50px;
+        font-size: 19px;
+    }
+}

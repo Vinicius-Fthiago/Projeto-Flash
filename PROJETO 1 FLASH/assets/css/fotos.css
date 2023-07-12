@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 25px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #FFD700;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.fotos-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+.fotos {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    background-color: black;
+    margin-top: 50px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.foto-1 {
+    background-image: url('https://br.web.img3.acsta.net/c_310_420/pictures/16/11/30/19/27/540469.jpg');
+    transition: 3s;
+}
+
+.foto-2 {
+    background-image: url('https://br.web.img3.acsta.net/c_310_420/pictures/15/09/15/20/43/206977.jpg');
+    transition: 3s;
+}
+
+.foto-3 {
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMzczNzNiMDAtMmUzZS00MTkwLWIwOTYtNmYyNjg3MTVkNThhXkEyXkFqcGdeQXVyMjA4MjI5MTA@._V1_FMjpg_UX1000_.jpg');
+    transition: 3s;
+}
+
+.foto-4 {
+    background-image: url('https://br.web.img2.acsta.net/pictures/21/02/19/23/45/3616016.jpg');
+    transition: 3s;
+}
+
+.foto-5 {
+    background-image: url('https://flxt.tmsimg.com/assets/225797_v9_bb.jpg');
+    transition: 3s;
+}
+
+.foto-6 {
+    background-image: url('https://br.web.img3.acsta.net/c_310_420/pictures/20/10/14/18/13/0914891.jpg');
+    transition: 3s;
+}
+
+.foto-1:hover {
+    background-image: url('https://deadline.com/wp-content/uploads/2023/05/the-flash-ezra-miller.jpg?w=681&h=383&crop=1');
+}
+
+.foto-2:hover {
+    background-image: url('https://sm.ign.com/ign_br/screenshot/default/flash-batman_za4g.jpg');
+}
+
+.foto-3:hover {
+    background-image: url('https://sm.ign.com/ign_br/screenshot/default/ben-affleck-234900238_zj2h.jpg');
+}
+
+.foto-4:hover {
+    background-image: url('https://assets.ayobandung.com/crop/0x0:0x0/750x0/webp/photo/2022/04/07/816276206.jpg');
+}
+
+.foto-5:hover {
+    background-image: url('https://www.comingsoon.net/wp-content/uploads/sites/3/2023/03/the-flash-zod-header.png');
+}
+
+.foto-6:hover {
+    background-image: url('https://pyxis.nymag.com/v1/imgs/00a/f55/ac98cd4a59542bd608c377c6fe53c9a17c-01-wonder-woman.rsquare.w700.jpg');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .fotos {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+
+    .card {
+        font-size: 25px;
+    }
+
+}
